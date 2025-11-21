@@ -1,0 +1,15 @@
+# --- Web Framework & Server ---
+fastapi>=0.109.0
+uvicorn[standard]>=0.27.0   # [standard] installs 'uvloop' for 3x faster performance
+
+# --- Data Engineering & Storage ---
+duckdb>=0.9.2               # The OLAP engine
+pandas>=2.1.4               # For data transformation
+numpy>=1.26.0               # Required by Pandas (explicit is better than implicit)
+
+# --- Network & Async I/O ---
+httpx>=0.26.0               # The async HTTP client (for CoinGecko API)
+
+# --- Utilities ---
+pydantic>=2.5.0             # Data validation (Core to FastAPI)
+python-multipart>=0.0.6     # Standard for form data parsing
