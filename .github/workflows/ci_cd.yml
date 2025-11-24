@@ -53,7 +53,7 @@ jobs:
     steps:
       - name: Trigger Render Deployment
         run: |
-          if [ -z "${{ secrets.RENDER_DEPLOY_HOOK }}" ]; then
+          if [ -z ${{ secrets.RENDER_DEPLOY_HOOK }} ]; then
             echo "SECRET IS EMPTY"
             exit 1
           else
